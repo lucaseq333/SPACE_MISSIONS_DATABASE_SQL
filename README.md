@@ -1,5 +1,7 @@
 # Space missions (database-SQL)
 
+* The database stores information about space missions
+
 # Selects (examples)
 
 1.Select all crewed missions completed by SpaceX
@@ -68,3 +70,6 @@ SELECT
 FROM
 WHERE
 ```
+
+# Sources
+* I used materials from classes and lectures from my college
