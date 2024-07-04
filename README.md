@@ -7,9 +7,22 @@
 
 1.Select all crewed missions completed by SpaceX
 ```
-SELECT
-FROM
+SELECT Mission.Id, Mission.Name, Mission.Type, Mission.Descritpion, Organization.Acronym, Status.Name AS "STATUS"
+FROM Mission
+FULL JOIN
+Organization_Mission
+ON
+Mission.Id=Organization_Mission.Mission_Id
+FULL JOIN
+Organization
+ON
+Organization.Id=Organization_Mission.Organization_Id
+FULL JOIN
+Status
+ON
+Status.Id=Mission.Status_Id
 WHERE
+Status.Nazwa="udana" AND Organization.Acronym="SpaceX";
 ```
 Output: 
 
