@@ -72,9 +72,17 @@ Output:
 
 7.Select all missions that involved non-US participants
 ```
-SELECT
-FROM
-WHERE
+SELECT Mission.Name, Person.Name, Person.Surname, Person.Country_of_origin
+FROM Mission
+JOIN Person_Mission
+ON
+Mission.Id=Person_Mission.Mission_Id
+JOIN
+Person
+ON
+Person.Id=Person_Mission.Person_Id
+WHERE COuntry_of_origin NOT LIKE 'USA'
+ORDER BY Mission.Name;
 ```
 Output: 
 
