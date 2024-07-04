@@ -3,9 +3,6 @@
 * The database stores information about space missions
 * I chose this topic because I have always been interested in space
 
-# Table of content
-[Select 1]
-
 # Selects (examples)
 
 1.Select all crewed missions completed by SpaceX
