@@ -14,3 +14,9 @@ SELECT
 FROM
 WHERE
 ```
+3.Select all people who took part in more than one mission - display their number
+```
+SELECT
+FROM
+WHERE
+```
