@@ -1,6 +1,7 @@
-# Space missions (database-SQL)
+# Space missions (database-SQL) 🚀
 
 * The database stores information about space missions
+* I chose this topic because I have always been interested in space
 
 # Selects (examples)
 
