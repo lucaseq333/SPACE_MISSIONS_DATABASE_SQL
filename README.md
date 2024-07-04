@@ -7,7 +7,7 @@
 
 1.Select all crewed missions completed by SpaceX
 ```
-SELECT Mission.Id, Mission.Name, Mission.Type, Mission.Descritpion, Organization.Acronym, Status.Name AS "STATUS"
+SELECT Mission.Name, Mission.Type, Mission.Descritpion, Organization.Acronym, Status.Name AS "STATUS"
 FROM Mission
 FULL JOIN
 Organization_Mission
