@@ -44,9 +44,13 @@ Output:
 
 4.Select all failed drone missions
 ```
-SELECT
-FROM
-WHERE
+SELECT *
+FROM Mission
+JOIN
+Status
+ON
+Status.Id=Mission.Status_Id
+WHERE Status.Id = 2;
 ```
 Output: 
 
