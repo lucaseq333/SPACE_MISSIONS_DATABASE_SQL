@@ -11,12 +11,16 @@ SELECT
 FROM
 WHERE
 ```
+Output: 
+
 2.Select all missions organized by more than one organization
 ```
 SELECT
 FROM
 WHERE
 ```
+Output: 
+
 3.Select all people who took part in more than one mission - display their number
 ```
 SELECT
