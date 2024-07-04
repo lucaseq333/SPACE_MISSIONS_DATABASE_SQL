@@ -8,3 +8,9 @@ SELECT
 FROM
 WHERE
 ```
+2.Select all missions organized by more than one organization
+```
+SELECT
+FROM
+WHERE
+```
