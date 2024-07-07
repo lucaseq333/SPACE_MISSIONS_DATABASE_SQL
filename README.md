@@ -54,6 +54,8 @@ WHERE Status.Id = 2;
 ```
 Output: 
 
+![select4](https://github.com/lucaseq333/Space-missions---database-SQL/assets/116523351/b4622e7f-65d8-4853-8f96-01c8280924b4)
+
 5.Choose the largest vehicle from each category (among Satellites, Rockets and Rovers)
 ```
 SELECT
@@ -95,6 +97,8 @@ FROM
 WHERE
 ```
 Output: 
+
+![select8](https://github.com/lucaseq333/Space-missions---database-SQL/assets/116523351/6a43e5f7-dd7e-4f59-b2e5-015c496c57ab)
 
 9.List the number of all missions and sort them by status (which status appears most often? - count it and display it)
 ```
