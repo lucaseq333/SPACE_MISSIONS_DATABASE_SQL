@@ -98,11 +98,18 @@ Output:
 
 9.List the number of all missions and sort them by status (which status appears most often? - count it and display it)
 ```
-SELECT
-FROM
-WHERE
+SELECT Status.Nazwa AS "STATUS NAME", COUNT(Status.Nazwa) AS "STATUS AMOUNT"
+FROM Mission
+JOIN
+Status
+ON
+Mission.Status_Id=Status.Id
+GROUP BY(Status.Nazwa)
+ORDER BY COUNT(Status.Nazwa) DESC;
 ```
 Output: 
+
+![select9](https://github.com/lucaseq333/Space-missions---database-SQL/assets/116523351/50334ae0-d969-47f4-87aa-01609d7a2c38)
 
 10.List which company/organization organized the most missions
 ```
