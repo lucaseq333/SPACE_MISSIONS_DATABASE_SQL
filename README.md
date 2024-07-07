@@ -85,6 +85,7 @@ WHERE COuntry_of_origin NOT LIKE 'USA'
 ORDER BY Mission.Name;
 ```
 Output: 
+
 ![select7](https://github.com/lucaseq333/Space-missions---database-SQL/assets/116523351/8c3fdc13-32e3-43a2-8e09-92cce7fa5309)
 
 8.List the number of times each vehicle appeared in a given mission
