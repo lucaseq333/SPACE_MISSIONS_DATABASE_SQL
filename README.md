@@ -5,7 +5,7 @@
 
 # Selects (examples)
 
-1.Select all crewed missions completed by SpaceX
+#### 1.Select all crewed missions completed by SpaceX
 ```
 SELECT Mission.Name, Mission.Type, Mission.Descritpion, Organization.Acronym, Status.Name AS "STATUS"
 FROM Mission
@@ -26,7 +26,7 @@ Status.Nazwa="udana" AND Organization.Acronym="SpaceX";
 ```
 Output: 
 
-2.Select all missions organized by more than one organization
+#### 2.Select all missions organized by more than one organization
 ```
 SELECT
 FROM
@@ -34,7 +34,7 @@ WHERE
 ```
 Output: 
 
-3.Select all people who took part in more than one mission - display their number
+#### 3.Select all people who took part in more than one mission - display their number
 ```
 SELECT
 FROM
@@ -42,7 +42,7 @@ WHERE
 ```
 Output: 
 
-4.Select all failed drone missions
+#### 4.Select all failed drone missions
 ```
 SELECT *
 FROM Mission
@@ -56,7 +56,7 @@ Output:
 
 ![select4](https://github.com/lucaseq333/Space-missions---database-SQL/assets/116523351/b4622e7f-65d8-4853-8f96-01c8280924b4)
 
-5.Choose the largest vehicle from each category (among Satellites, Rockets and Rovers)
+#### 5.Choose the largest vehicle from each category (among Satellites, Rockets and Rovers)
 ```
 SELECT
 FROM
@@ -64,7 +64,7 @@ WHERE
 ```
 Output: 
 
-6.Select all vehicles that participated in more than one mission
+#### 6.Select all vehicles that participated in more than one mission
 ```
 SELECT
 FROM
@@ -72,7 +72,7 @@ WHERE
 ```
 Output: 
 
-7.Select all missions that involved non-US participants
+#### 7.Select all missions that involved non-US participants
 ```
 SELECT Mission.Name, Person.Name, Person.Surname, Person.Country_of_origin
 FROM Mission
@@ -90,7 +90,7 @@ Output:
 
 ![select7](https://github.com/lucaseq333/Space-missions---database-SQL/assets/116523351/8c3fdc13-32e3-43a2-8e09-92cce7fa5309)
 
-8.List the number of times each vehicle appeared in a given mission
+#### 8.List the number of times each vehicle appeared in a given mission
 ```
 SELECT
 FROM
@@ -100,7 +100,7 @@ Output:
 
 ![select8](https://github.com/lucaseq333/Space-missions---database-SQL/assets/116523351/6a43e5f7-dd7e-4f59-b2e5-015c496c57ab)
 
-9.List the number of all missions and sort them by status (which status appears most often? - count it and display it)
+#### 9.List the number of all missions and sort them by status (which status appears most often? - count it and display it)
 ```
 SELECT Status.Nazwa AS "STATUS NAME", COUNT(Status.Nazwa) AS "STATUS AMOUNT"
 FROM Mission
@@ -115,7 +115,7 @@ Output:
 
 ![select9](https://github.com/lucaseq333/Space-missions---database-SQL/assets/116523351/50334ae0-d969-47f4-87aa-01609d7a2c38)
 
-10.List which company/organization organized the most missions
+#### 10.List which company/organization organized the most missions
 ```
 SELECT
 FROM
@@ -123,7 +123,7 @@ WHERE
 ```
 Output: 
 
-11.Display in the view the number of: all people, how many times they took part in how many missions - manned/unmanned.
+#### 11.Display in the view the number of: all people, how many times they took part in how many missions - manned/unmanned.
 ```
 SELECT
 FROM
