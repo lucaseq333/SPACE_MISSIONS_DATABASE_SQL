@@ -24,7 +24,7 @@ Status.Id=Mission.Status_Id
 WHERE
 Status.Nazwa="udana" AND Organization.Acronym="SpaceX";
 ```
-Output: 
+#### Output: 
 
 #### 2.Select all missions organized by more than one organization
 ```
@@ -32,7 +32,7 @@ SELECT
 FROM
 WHERE
 ```
-Output: 
+#### Output: 
 
 #### 3.Select all people who took part in more than one mission - display their number
 ```
@@ -40,7 +40,7 @@ SELECT
 FROM
 WHERE
 ```
-Output: 
+#### Output: 
 
 #### 4.Select all failed drone missions
 ```
@@ -52,7 +52,7 @@ ON
 Status.Id=Mission.Status_Id
 WHERE Status.Id = 2;
 ```
-Output: 
+#### Output: 
 
 ![select4](https://github.com/lucaseq333/Space-missions---database-SQL/assets/116523351/b4622e7f-65d8-4853-8f96-01c8280924b4)
 
@@ -62,7 +62,7 @@ SELECT
 FROM
 WHERE
 ```
-Output: 
+#### Output: 
 
 #### 6.Select all vehicles that participated in more than one mission
 ```
@@ -70,7 +70,7 @@ SELECT
 FROM
 WHERE
 ```
-Output: 
+#### Output: 
 
 #### 7.Select all missions that involved non-US participants
 ```
@@ -86,7 +86,7 @@ Person.Id=Person_Mission.Person_Id
 WHERE COuntry_of_origin NOT LIKE 'USA'
 ORDER BY Mission.Name;
 ```
-Output: 
+#### Output: 
 
 ![select7](https://github.com/lucaseq333/Space-missions---database-SQL/assets/116523351/8c3fdc13-32e3-43a2-8e09-92cce7fa5309)
 
@@ -96,7 +96,7 @@ SELECT
 FROM
 WHERE
 ```
-Output: 
+#### Output: 
 
 ![select8](https://github.com/lucaseq333/Space-missions---database-SQL/assets/116523351/6a43e5f7-dd7e-4f59-b2e5-015c496c57ab)
 
@@ -111,7 +111,7 @@ Mission.Status_Id=Status.Id
 GROUP BY(Status.Nazwa)
 ORDER BY COUNT(Status.Nazwa) DESC;
 ```
-Output: 
+#### Output: 
 
 ![select9](https://github.com/lucaseq333/Space-missions---database-SQL/assets/116523351/50334ae0-d969-47f4-87aa-01609d7a2c38)
 
@@ -121,7 +121,7 @@ SELECT
 FROM
 WHERE
 ```
-Output: 
+#### Output: 
 
 #### 11.Display in the view the number of: all people, how many times they took part in how many missions - manned/unmanned.
 ```
@@ -129,7 +129,7 @@ SELECT
 FROM
 WHERE
 ```
-Output: 
+#### Output: 
 
 # Sources
 * I used materials from classes and lectures from my college
