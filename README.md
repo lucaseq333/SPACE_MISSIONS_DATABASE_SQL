@@ -83,7 +83,7 @@ JOIN
 Person
 ON
 Person.Id=Person_Mission.Person_Id
-WHERE COuntry_of_origin NOT LIKE 'USA'
+WHERE Country_of_origin NOT LIKE 'USA'
 ORDER BY Mission.Name;
 ```
 #### Output: 
