@@ -66,9 +66,17 @@ WHERE
 
 #### 6.Select all vehicles that participated in more than one mission
 ```
-SELECT
-FROM
-WHERE
+SELECT Vehicle.Id, Vehicle.Nazwa, Mission.Id, Mission.Nazwa, Mission.Opis, COUNT(Mission_Id)
+FROM Vehicle
+JOIN
+Vehicle_Mission
+ON
+Vehicle.Id=Vehicle_Mission.Vehicle_Id
+JOIN
+Mission
+ON
+Mission.Id=Vehicle_Mission.Mission_Id
+WHERE COUNT(Mission_Id)>1
 ```
 #### Output: 
 
