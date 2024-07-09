@@ -2,6 +2,9 @@
 
 * The database stores information about space missions
 * I chose this topic because I have always been interested in space
+* Project shows usage of SQL syntax
+
+  ![sqllogo](https://github.com/lucaseq333/SPACE_MISSIONS_DATABASE_SQL/assets/116523351/4b53be91-c0bd-41f3-a326-b33af4cdf2ec)
 
 # Selects (examples)
 
