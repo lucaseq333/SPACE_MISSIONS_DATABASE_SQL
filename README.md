@@ -36,9 +36,7 @@ WHERE
 
 #### 3.Select all people who took part in more than one mission - display their number
 ```
-SELECT
-FROM
-WHERE
+
 ```
 #### Output: 
 
@@ -131,7 +129,7 @@ WHERE
 ```
 #### Output: 
 
-#### 11.Display in the view the number of: all people, how many times they took part in how many missions - manned/unmanned.
+#### 11.Display in the view the number of: all people, how many times they took part in how many missions, which and how many vehicles were used in which mission
 ```
 SELECT
 FROM
@@ -140,4 +138,4 @@ WHERE
 #### Output: 
 
 # Sources
-* I used materials from classes and lectures from my college
+* I used materials from classes and lectures from my college and my
