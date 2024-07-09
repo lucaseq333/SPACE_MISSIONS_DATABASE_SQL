@@ -123,9 +123,14 @@ ORDER BY COUNT(Status.Nazwa) DESC;
 
 #### 10.List which company/organization organized the most missions
 ```
-SELECT
-FROM
-WHERE
+SELECT MAX(Mission.Id), Mission.Name
+FROM Mission
+JOIN
+Organization_Mission
+ON Mission.Id=Organization_Mission.Mission_Id
+GROUP BY (MAX(Mission.Id))
+ORDER BY Mission.Name ASC;
+
 ```
 #### Output: 
 
